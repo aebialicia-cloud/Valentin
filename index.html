@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine</title>
+</head>
+
+<body style="background:#f7cfd8; text-align:center; font-family:Arial">
+
+  <div style="background:white; padding:30px; width:300px; margin:100px auto; border-radius:15px">
+
+    <h2 id="question">Will you be my Valentine? 💖</h2>
+
+    <button onclick="yes()">Yes</button>
+    <button onclick="no()">No</button>
+
+    <div id="result" style="display:none;">
+      <h2>YAY!!! 🎉</h2>
+      <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif" width="200">
+    </div>
+
+  </div>
+
+<script>
+function yes() {
+  document.getElementById("question").style.display="none";
+  document.getElementById("result").style.display="block";
+}
+
+function no() {
+  alert("No seems a bit shy 😏");
+}
+</script>
+
+</body>
+</html>
